@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. André Vasconcelos</title>
+
+    <!-- Bootstrap + fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+        font-family: 'Poppins', sans-serif; 
+        background-color: #f9f9f9; 
+        }
+        
+        .hero { 
+        background: linear-gradient(135deg, #6e57e0, #4a00e0); 
+        color: white; 
+        padding: 100px 20px; 
+        text-align: center; 
+        }
+
+        .section-title { 
+        font-size: 2.5rem; 
+        color: #333; 
+        margin-bottom: 20px; 
+        }
+
+        .card { 
+        border-radius: 15px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        .btn-primary { 
+        background-color: #6e57e0; 
+        border-color: #6e57e0; 
+        border-radius: 8px; 
+        }
+
+        .btn-primary:hover { 
+        background-color: #4a00e0; 
+        }
+
+        img {
+          margin-top: -120px;
+        }
+    </style>
+
+</head>
+<body>
+    
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Clínica Odontológica Vasconcelos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens da listinha -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1 class="display-4 fw-bold">Dr André Vasconcelos</h1>
+        <p class="lead">Sua saúde bucal em primeiro lugar</p>
+        <a href="#contato" class="btn btn-primary btn-lg">Agendar</a>
+    </section>
+
+    <!-- About us -->
+    <section id="sobre" class="container my-3">
+        <h2 class="section-title text-center">Sobre mim</h2>
+        
+        <!-- Hero image -->
+        <div class="text-center">
+          <img src="hero.png" class="mb-3 text-center mx-auto" alt="">
+        </div>
+        <p class="text-center">Sou apaixonado por transformar expectativas em mudanças, trazendo de volta seu sorriso</p>
+    </section>
+
+    <!-- Our services -->
+    <section id="servicos" class="container my-5">
+        <h2 class="section-title text-center">Especialidades</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center p-4">
+                    <h5>Ortodontia</h5>
+                    <p>Correção do alinhamento dos dentes e da mordida</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-4">
+                    <h5>Endodontia</h5>
+                    <p>Tratamento de canal, cuidando da parte interna do dente.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-4">
+                    <h5>Clinica Geral</h5>
+                    <p>Limpezas, restaurações, extrações simples e muito mais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contato" class="container my-5">
+        <h2 class="section-title text-center">Entre em contato</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-light mt-5">
+        <p>&copy; 2025 Clínica Odontológica Vasconcelos - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
